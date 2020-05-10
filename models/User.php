@@ -52,6 +52,7 @@ class User extends UserBase
         'email',
         'password',
         'password_confirmation',
+        'email_confirmation',
         'created_ip_address',
         'last_ip_address'
     ];
@@ -59,7 +60,7 @@ class User extends UserBase
     /**
      * Purge attributes from data set.
      */
-    protected $purgeable = ['password_confirmation', 'send_invite'];
+    protected $purgeable = ['password_confirmation', 'email_confirmation', 'send_invite'];
 
     protected $dates = [
         'last_seen',
