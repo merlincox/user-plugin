@@ -1,12 +1,14 @@
-subject = "Confirm your account"
+subject = "Please complete your registration"
 description = "Activate a new user"
 ==
-Hello {{ name }}
+Dear {{ name }}
 
-We need to verify that this is your email address.
-
-Please click the link below to confirm your account:
+Please click on the link below to complete your registration:
 
 {% partial 'button' url=link type='positive' body %}
 Confirm account
 {% endpartial %}
+
+You have received this email beacuse someone attempted to register at shambhalapala.net usng this email address.
+
+If this was not you, please notify us at postmaster@shambhalapala.net
